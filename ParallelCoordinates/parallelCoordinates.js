@@ -1,6 +1,7 @@
 
 
-//http://bl.ocks.org/mbostock/7586334
+
+//reference http://bl.ocks.org/mbostock/7586334
 function ParallelCoordinatesVis(_div, _logDiv, theData, _width, _height){
   let logDiv = _logDiv;
   let m = [30, 10, 60, 1],   // top left bottom right
@@ -80,9 +81,6 @@ function ParallelCoordinatesVis(_div, _logDiv, theData, _width, _height){
                 .style('z-index', '1000 !important')       
                 .classed("active", false)
         });
-
-
-
     // Add a group element for each dimension.
     let g = svg.selectAll(".dimension")
         .data(dimensions)
@@ -212,9 +210,6 @@ function ParallelCoordinatesVis(_div, _logDiv, theData, _width, _height){
 } // End ParallelCoordinatesVis
 
 
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////
 function ParallelCoordinatesInit(_parentDiv, _logDiv, _theData, _title){
   this.mainDiv = document.getElementById(_parentDiv);
@@ -303,13 +298,6 @@ ParallelCoordinatesInit.prototype.Resize=function(){
 }
 /////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
-
 // ..................................................... the Data structure
 // tempData = []
 // for(let i=0,c=360;i<c;++i){
@@ -355,6 +343,3 @@ function RemoveEmptyListInJSON(d){
   }
   return newJSON;
 }
-
-
-
