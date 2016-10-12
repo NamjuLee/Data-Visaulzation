@@ -297,7 +297,6 @@ ParallelCoordinatesInit.prototype.Resize=function(){
   $("#logDiv").height( $("#LogDiv").height() - 82 + "px");
 }
 /////////////////////////////////////////////////////////////////////////////
-
 // ..................................................... the Data structure
 // tempData = []
 // for(let i=0,c=360;i<c;++i){
